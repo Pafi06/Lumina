@@ -98,7 +98,6 @@ def stf_stretch(d, target=0.25):
     lo = np.percentile(d, 0.5)
     hi = np.percentile(d, 99.5)
     nd = np.clip((d - lo) / (hi - lo + 1e-9), 0, 1)
-    # midtone transfer: solve for b given target median
     m = np.median(nd)
     if m < 1e-9: return nd
     b = (m - 1) / ((2*m - 1) * target + m - 1e-9) if abs(2*m-1) > 1e-9 else 0.5
