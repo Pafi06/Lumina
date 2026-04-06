@@ -1,22 +1,6 @@
-# AstroStack
+# Lumina
 
-Astrophotography stacking app with a dark GUI.
-
-## Install
-
-```bash
-pip install -r requirements.txt
-```
-
-> **rawpy** needs libraw. On Windows it just works via pip.  
-> On Mac: `brew install libraw` first.  
-> On Linux: `sudo apt install libraw-dev`
-
-## Run
-
-```bash
-python app.py
-```
+Astrophotography stacking app.
 
 ## Supported formats
 
@@ -25,16 +9,6 @@ python app.py
 | FITS | .fits .fit .fts |
 | RAW  | .cr2 .cr3 .nef .arw .dng .raf .rw2 .orf .pef |
 | Standard | .jpg .jpeg .png .tiff .tif .bmp |
-
-## Workflow
-
-1. Drop **Lights** into the Lights zone (required)
-2. Optionally add Darks, Flats, Biases
-3. Choose stacking method (Sigma Clip recommended)
-4. Toggle alignment if needed (requires scikit-image)
-5. Hit **STACK**
-6. Preview appears on the right
-7. **Save Result** as FITS, PNG, or TIFF
 
 ## Stacking methods
 
@@ -45,4 +19,3 @@ python app.py
 ## Alignment
 
 Uses phase cross-correlation (sub-pixel). Works well for small drift.  
-Requires `scikit-image`. If not installed, stacking still works without alignment.
