@@ -12,7 +12,7 @@ Astrophotography stacking app.
 
 ## Stacking methods
 
-- **Sigma Clip** — rejects outliers (satellites, cosmic rays). Best for most cases.
+- **Sigma Clip** — rejects outliers (satellites, etc). Best for most cases.
 - **Median** — robust, no outlier rejection tuning needed
 - **Mean** — fastest, use only if you have very few frames
 
