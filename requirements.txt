@@ -5,4 +5,4 @@ astropy
 rawpy
 imageio
 Pillow
-scikit-image
+scikit-image 
